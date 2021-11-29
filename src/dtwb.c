@@ -1,8 +1,10 @@
 
 #include "init.h"
+#include "input.h"
+#include "window.h"
 #include "types.h"
 
-#include <proto/dos.h>
+
 /*--------------------------------------------------------------------------*/
 
 int main(void)
@@ -11,7 +13,15 @@ int main(void)
 
 	if (RETURN_OK == result)
 	{
-		Delay(200);
+		while (TRUE)
+		{
+			WindowProcessInputs();
+
+			if (InputIsExitToOsPressed())
+			{
+				break;
+			}
+		}
 	}
 
 	InitClose();
