@@ -1,20 +1,9 @@
-
-#include "init.h"
-#include "types.h"
-
+#ifndef DTWB_INIT_H
+#define DTWB_INIT_H
 /*--------------------------------------------------------------------------*/
 
-int main(void)
-{
-	int result = InitOpen();
-
-	if (RETURN_OK == result)
-	{
-	}
-
-	InitClose();
-
-	return 0;
-}
+int InitOpen(void);
+void InitClose(void);
 
 /*--------------------------------------------------------------------------*/
+#endif /* DTWB_INIT_H */

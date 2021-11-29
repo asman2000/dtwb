@@ -1,20 +1,9 @@
-
-#include "init.h"
-#include "types.h"
-
+#ifndef DTWB_LIBS_H
+#define DTWB_LIBS_H
 /*--------------------------------------------------------------------------*/
 
-int main(void)
-{
-	int result = InitOpen();
-
-	if (RETURN_OK == result)
-	{
-	}
-
-	InitClose();
-
-	return 0;
-}
+int LibsOpen(void);
+void LibsClose(void);
 
 /*--------------------------------------------------------------------------*/
+#endif /* DTWB_LIBS_H */
