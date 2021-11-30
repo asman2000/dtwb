@@ -28,6 +28,7 @@ static struct TagItem tags[] =
 	{SA_Top, 0},
 	{SA_Type, CUSTOMSCREEN | CUSTOMBITMAP},
 	{SA_Quiet, TRUE},
+	{SA_Colors32, TRUE},
 	{TAG_DONE, TAG_END},
 };
 

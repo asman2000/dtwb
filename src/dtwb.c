@@ -1,4 +1,5 @@
 
+#include "gfx.h"
 #include "init.h"
 #include "input.h"
 #include "window.h"
@@ -13,6 +14,8 @@ int main(void)
 
 	if (RETURN_OK == result)
 	{
+		GfxCopyToScreen();
+
 		while (TRUE)
 		{
 			WindowProcessInputs();

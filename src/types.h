@@ -14,5 +14,6 @@ struct Dimension
 	ULONG displayId;
 };
 
+#include <stdio.h>
 /*--------------------------------------------------------------------------*/
 #endif /* DTWB_TYPES_H */
